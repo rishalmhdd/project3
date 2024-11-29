@@ -1,0 +1,57 @@
+Egadgets:Ecommerce App:
+-------------------------
+
+
+customer->
+
+-signup,signin
+-view products 
+-view products details
+-add to cart
+-view cart list
+-remove from cart
+-place order
+-view 
+-cancel order
+
+Admin (Using Django Admin Interface)
+
+-add products
+-manage products details
+-view order
+-change order status
+
+
+Model:-
+
+Products: char
+-title: char
+-description: char
+-price:Integer
+-category:char
+-Image:Image
+
+Cart:-
+product= forienkey
+User = forienkey
+DateTime= DateTime
+Quantity =Integer
+
+Orders:
+User=forienkey
+Products=forienkey
+DateTime=DateTime
+Quantity=Integer
+status=char
+
+
+User model has three type users:
+
+1.superuser-111
+2.staffuser-011
+3.normaluser-001
+[is_superuser is_staff is_active]
+
+is_active = 1-> user can complete authentication
+is_staff = 1-> user can complte authentication on admin also and have access on admn interface which given by admin\super user
+is_siperuser = 1 -> user called superuser/admin.have complete access over admin site
